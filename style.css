@@ -155,6 +155,16 @@ textarea:not([rows]) {
   background-position: 95% 50%;
   background-size: 38vw;
   min-height: 650px;
+  animation: laptop 1s ease-in;
+}
+
+@keyframes laptop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
 }
 
 .hero-banner-info {
@@ -208,7 +218,8 @@ textarea:not([rows]) {
     135deg,
     rgba(242, 242, 242, 1) 50%,
     rgba(231, 247, 255, 1) 72%
-  );
+    );
+    animation: laptop 1s ease-in;
 }
 
 .digital-wrapper {
@@ -241,6 +252,15 @@ textarea:not([rows]) {
 
 .digital-img {
   width: 50%;
+}
+
+@keyframes digatal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
 }
 
 @media (max-width: 850px) {
@@ -385,6 +405,7 @@ textarea:not([rows]) {
 }
 
 @media (max-width: 850px) {
+  
   .promo__upper-cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -406,6 +427,10 @@ textarea:not([rows]) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 40px;
+}
+
+.diagrams__transition-info {
+  margin-bottom: 36px;
 }
 
 .diagrams__transition-title {
